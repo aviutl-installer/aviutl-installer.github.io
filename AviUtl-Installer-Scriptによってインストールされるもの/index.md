@@ -9,7 +9,7 @@ preview: https://aviutl-installer.github.io/img/List-of-items-installed-by-AviUt
 いつの間にか増えてきてしまったので一覧です。
 
 ## インストールされるもの
-AviUtl Installer Script [1.1.18 (2025-02-26)](https://github.com/menndouyukkuri/aviutl-installer-script/releases/tag/v1.1.18) の aviutl-installer.cmd によってインストールされるものの一覧です。\
+AviUtl Installer Script [1.1.19 (2025-02-27)](https://github.com/menndouyukkuri/aviutl-installer-script/releases/tag/v1.1.19) の aviutl-installer.cmd によってインストールされるものの一覧です。\
 バージョンや日付の記載がないものはインストール時の最新版がインストールされます。
 
 ### AviUtl本体
