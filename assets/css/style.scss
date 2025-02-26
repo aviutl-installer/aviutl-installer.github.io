@@ -1,0 +1,141 @@
+---
+---
+
+@import "jekyll-theme-slate";
+
+/* User style */
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500&display=swap');
+
+/* YakuHanJPs */
+@import url('https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp_s.min.css');
+
+/* Fonts */
+/* YakuHanJPs（Webフォント）→M PLUS Rounded 1c（Webフォント）→デフォルトの欧文フォント→ヒラギノ角ゴ ProN（Webフォントが使えない環境用）→ヒラギノ角ゴシック→游ゴシック（macOSのみ）→Noto Sans JP→源ノ角ゴシック→Noto Sans CJK JP→源ノ角ゴシック CJK→メイリオ */
+body {
+  font-family: "Yaku Han JPs", YakuHanJPs, "M PLUS Rounded 1c", "Myriad Pro", Calibri, Helvetica, Arial, "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴシック", "Hiragino Sans", Lato, "游ゴシック体", YuGothic, "Noto Sans JP", source-han-sans-japanese, "Noto Sans CJK JP", source-han-sans-cjk-ja, メイリオ, Meiryo, sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  -webkit-text-stroke-width: 1.05px;
+  letter-spacing: 0.05em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Yaku Han JPs", YakuHanJPs, "M PLUS Rounded 1c", "Lucida Grande", Calibri, Helvetica, Arial, "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴシック", "Hiragino Sans", Lato, "游ゴシック体", YuGothic, "Noto Sans JP", source-han-sans-japanese, "Noto Sans CJK JP", source-han-sans-cjk-ja, メイリオ, Meiryo, sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 34px;
+  -webkit-text-stroke-width: 1.5px;
+  letter-spacing: 0.015em;
+}
+h2 {
+  font-size: 30px;
+  -webkit-text-stroke-width: 1.35px;
+  letter-spacing: 0.02em;
+}
+h3 {
+  /* font-size: 24px; */
+  -webkit-text-stroke-width: 1.2px;
+  letter-spacing: 0.025em;
+}
+h4 {
+  font-size: 22px;
+  letter-spacing: 0.03em;
+}
+h5 {
+  font-size: 19px;
+  -webkit-text-stroke-width: .9px;
+  letter-spacing: 0.035em;
+}
+h6 {
+  font-size: 17px;
+  -webkit-text-stroke-width: .75px;
+  letter-spacing: 0.04em;
+}
+
+strong, #forkme_banner {
+  font-weight: 500;
+  -webkit-text-stroke-width: .75px;
+}
+
+.size_small, #display_copylight {
+  font-size: small;
+}
+
+/* project title */
+#project_title, .project_title_a {
+  font-size: 38px;
+}
+.project_title_a {
+  margin: 0;
+  color: #fff;
+  font-weight: 400;
+  text-shadow: #111 0px 0px 10px;
+}
+
+#project_tagline {
+  font-size: 20px;
+  font-weight: 100;
+  -webkit-text-stroke-width: .7px;
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 23px;
+  }
+  h4 {
+    font-size: 21px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+  #project_title, .project_title_a {
+    font-size: 36px;
+  }
+  #project_tagline {
+    font-size: 19px;
+  }
+}
+
+/* forkme banner */
+#forkme_banner {
+  padding-top: 12px;
+  padding-right: 48px;
+  padding-left: 12px;
+}
+
+/* site show downloads */
+#downloads {
+  width: 115px;
+}
+
+/* display copylight */
+#display_copylight {
+  text-align: center;
+  margin-top: 35px;
+}
+
+/* img size */
+img {
+  max-width: 640px;
+  max-height: 420px;
+}
+@media screen and (max-width: 660px) {
+  img {
+    max-width: 100%;
+  }
+}

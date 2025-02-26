@@ -1,0 +1,71 @@
+name: Update Release Download Count
+
+on:
+  schedule:
+    - cron: '50 * * * *' # 毎時50分に実行
+  workflow_dispatch:     # 手動で実行できるように
+
+jobs:
+  update-count:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Get release download count
+        id: get-download-count
+        env:
+          GITHUB_TOKEN: ${{ secrets.AIS_CONTENTS_READONLY_TOKEN }}
+        shell: python
+        run: |
+          import requests
+          import os
+
+          url = f'https://api.github.com/repos/menndouyukkuri/aviutl-installer-script/releases'
+          headers = {'Authorization': f'Bearer {os.getenv("GITHUB_TOKEN")}'}
+
+          response = requests.get(url, headers=headers)
+          response.raise_for_status()
+
+          releases = response.json()
+
+          total_downloads = 0
+          for release in releases:
+              for asset in release['assets']:
+                  total_downloads += asset['download_count']
+
+          with open(os.getenv('GITHUB_OUTPUT'), 'a') as f:
+              f.write(f'total_downloads={total_downloads}\n')
+
+      - name: Update site data
+        run: |
+          echo "total_downloads: ${{ steps.get-download-count.outputs.total_downloads }}" > _data/total_downloads.yml
+
+      - name: Check for changes
+        id: check_changes
+        continue-on-error: true
+        run: |
+          git add -N _data/total_downloads.yml
+          git diff --exit-code
+
+      - name: Commit and push changes
+        if: steps.check_changes.outcome == 'failure'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/total_downloads.yml
+          git commit -m "Update download count"
+          git push

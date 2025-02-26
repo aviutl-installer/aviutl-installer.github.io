@@ -1,0 +1,19 @@
+title: AviUtl Installer Script
+description: AviUtl Installer Script (AIS) は、AviUtlを導入して初期設定するスクリプトの詰め合わせです。
+lang: ja-JP
+theme: jekyll-theme-slate
+show_downloads: true
+github:
+  zip_url: https://github.com/menndouyukkuri/aviutl-installer-script/releases/latest
+  is_project_page: true
+  repository_url: https://github.com/menndouyukkuri/aviutl-installer-script
+  owner_name: menndouyukkuri
+  owner_url: https://github.com/menndouyukkuri
+
+plugins:
+  - jekyll-sitemap
+
+en-description: AviUtl Installer Script (AIS) is a collection of scripts for installing and initially setting up AviUtl.
+top_url: https://aviutl-installer.github.io/
+en-top_url: https://aviutl-installer.github.io/en/
+favicons_dir: https://aviutl-installer.github.io/img/favicons/

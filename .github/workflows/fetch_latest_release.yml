@@ -1,0 +1,41 @@
+name: Fetch Latest Release
+
+on:
+  push:
+    paths:
+      - 'AviUtl-Installer-Scriptによってインストールされるもの/index.md' # このファイルに変更があれば実行
+  schedule:
+    - cron: '40 * * * *' # 毎時40分に実行
+  workflow_dispatch:     # 手動で実行できるように
+
+jobs:
+  fetch-release:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch latest release
+        env:
+          GITHUB_TOKEN: ${{ secrets.AIS_CONTENTS_READONLY_TOKEN }}
+        run: |
+          curl -s -H "Authorization: Bearer $GITHUB_TOKEN" https://api.github.com/repos/menndouyukkuri/aviutl-installer-script/releases/latest > _data/latest_release.json
+
+      - name: Check for changes
+        id: check_changes
+        continue-on-error: true
+        run: |
+          git add -N _data/latest_release.json
+          git diff --exit-code
+
+      - name: Commit and push changes
+        if: steps.check_changes.outcome == 'failure'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/latest_release.json
+          git commit -m "Update latest_release.json"
+          git push
