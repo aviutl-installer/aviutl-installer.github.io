@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/menndouyukkuri/aviutl-installer-script/releases/202593971",
-  "assets_url": "https://api.github.com/repos/menndouyukkuri/aviutl-installer-script/releases/202593971/assets",
-  "upload_url": "https://uploads.github.com/repos/menndouyukkuri/aviutl-installer-script/releases/202593971/assets{?name,label}",
-  "html_url": "https://github.com/menndouyukkuri/aviutl-installer-script/releases/tag/v1.1.19",
-  "id": 202593971,
+  "url": "https://api.github.com/repos/menndouyukkuri/aviutl-installer-script/releases/203059705",
+  "assets_url": "https://api.github.com/repos/menndouyukkuri/aviutl-installer-script/releases/203059705/assets",
+  "upload_url": "https://uploads.github.com/repos/menndouyukkuri/aviutl-installer-script/releases/203059705/assets{?name,label}",
+  "html_url": "https://github.com/menndouyukkuri/aviutl-installer-script/releases/tag/v1.1.20",
+  "id": 203059705,
   "author": {
     "login": "menndouyukkuri",
     "id": 61068665,
@@ -25,20 +25,20 @@
     "user_view_type": "public",
     "site_admin": false
   },
-  "node_id": "RE_kwDONlDrIc4ME1az",
-  "tag_name": "v1.1.19",
+  "node_id": "RE_kwDONlDrIc4MGnH5",
+  "tag_name": "v1.1.20",
   "target_commitish": "main",
-  "name": "Version 1.1.19 (2025-02-27)",
+  "name": "Version 1.1.20 (2025-03-01)",
   "draft": false,
   "prerelease": false,
-  "created_at": "2025-02-26T16:06:45Z",
-  "published_at": "2025-02-26T16:24:23Z",
+  "created_at": "2025-02-28T16:00:30Z",
+  "published_at": "2025-02-28T16:03:43Z",
   "assets": [
     {
-      "url": "https://api.github.com/repos/menndouyukkuri/aviutl-installer-script/releases/assets/232795615",
-      "id": 232795615,
-      "node_id": "RA_kwDONlDrIc4N4C3f",
-      "name": "aviutl-installer_1.1.19.zip",
+      "url": "https://api.github.com/repos/menndouyukkuri/aviutl-installer-script/releases/assets/233404551",
+      "id": 233404551,
+      "node_id": "RA_kwDONlDrIc4N6XiH",
+      "name": "aviutl-installer_1.1.20.zip",
       "label": null,
       "uploader": {
         "login": "menndouyukkuri",
@@ -63,14 +63,14 @@
       },
       "content_type": "application/x-zip-compressed",
       "state": "uploaded",
-      "size": 39698,
-      "download_count": 10,
-      "created_at": "2025-02-26T16:23:45Z",
-      "updated_at": "2025-02-26T16:23:47Z",
-      "browser_download_url": "https://github.com/menndouyukkuri/aviutl-installer-script/releases/download/v1.1.19/aviutl-installer_1.1.19.zip"
+      "size": 40442,
+      "download_count": 0,
+      "created_at": "2025-02-28T16:04:58Z",
+      "updated_at": "2025-02-28T16:05:00Z",
+      "browser_download_url": "https://github.com/menndouyukkuri/aviutl-installer-script/releases/download/v1.1.20/aviutl-installer_1.1.20.zip"
     }
   ],
-  "tarball_url": "https://api.github.com/repos/menndouyukkuri/aviutl-installer-script/tarball/v1.1.19",
-  "zipball_url": "https://api.github.com/repos/menndouyukkuri/aviutl-installer-script/zipball/v1.1.19",
-  "body": "### 更新内容\r\n- コードの安定性と読みやすさの向上\r\n\r\n### 使用方法\r\n[AviUtl Installer Scriptについて#使用方法](https://aviutl-installer.github.io/#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95) を参照。\r\n\r\n### インストールされるもの\r\n[インストールされるもの](https://aviutl-installer.github.io/AviUtl-Installer-Script%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%95%E3%82%8C%E3%82%8B%E3%82%82%E3%81%AE/) を参照。\r\n\r\n### 今後追加したい機能\r\n#7 を参照。\r\n\r\n### Full Changelog\r\n[v1.1.18...v1.1.19](https://github.com/menndouyukkuri/aviutl-installer-script/compare/v1.1.18...v1.1.19)"
+  "tarball_url": "https://api.github.com/repos/menndouyukkuri/aviutl-installer-script/tarball/v1.1.20",
+  "zipball_url": "https://api.github.com/repos/menndouyukkuri/aviutl-installer-script/zipball/v1.1.20",
+  "body": "### 更新内容\r\n- エラー処理の追加と改善\r\n\r\n### 使用方法\r\n[AviUtl Installer Scriptについて#使用方法](https://aviutl-installer.github.io/#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95) を参照。\r\n\r\n### インストールされるもの\r\n[インストールされるもの](https://aviutl-installer.github.io/AviUtl-Installer-Script%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%95%E3%82%8C%E3%82%8B%E3%82%82%E3%81%AE/) を参照。\r\n\r\n### 今後追加したい機能\r\n#7 を参照。\r\n\r\n### Full Changelog\r\n[v1.1.19...v1.1.20](https://github.com/menndouyukkuri/aviutl-installer-script/compare/v1.1.19...v1.1.20)"
 }
