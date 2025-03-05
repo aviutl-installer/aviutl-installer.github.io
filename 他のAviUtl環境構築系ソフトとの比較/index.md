@@ -1,14 +1,14 @@
 ---
 title: 他のAviUtl環境構築系ソフトとの比較
-description: Aviutl Installer Scriptと他のAviUtl環境構築系ソフトを比較します。
+description: AviUtl Installer Scriptと他のAviUtl環境構築系ソフトを比較します。
 preview: https://aviutl-installer.github.io/img/Comparison-with-other-AviUtl-environment-construction-software-ja/ogp.png
 ---
 
 # 他のAviUtl環境構築系ソフトとの比較
-このページでは、Aviutl Installer Script と他のAviUtl環境構築系ソフトを比較しています。
+このページでは、AviUtl Installer Script と他のAviUtl環境構築系ソフトを比較しています。
 
 ## AviUtl Package Manager
-Aviutl Installer Script と [AviUtl Package Manager](https://team-apm.github.io/apm/) (APM) を比較します。
+AviUtl Installer Script と [AviUtl Package Manager](https://team-apm.github.io/apm/) (APM) を比較します。
 
 ### AviUtl Installer Script が優れている点
 * **おすすめ構成が最新のものになっている**\
@@ -36,7 +36,7 @@ AviUtl Package Manager はniconicoの親作品登録用のIDを取得する機�
   * AviUtl Installer Script 1.1.2v2 (2025-01-22) 以降、インストールしたパッケージをAPMに認識させるための apm.json を配置するようになったため、パッケージの追加などを含めAPMを使用して AviUtl Installer Script で導入したAviUtl環境の管理を行うことが可能。
 
 ## AviUtl Extra Pack
-Aviutl Installer Script と [AviUtl Extra Pack](https://www.videohelp.com/software/AviUtl) を比較します。
+AviUtl Installer Script と [AviUtl Extra Pack](https://www.videohelp.com/software/AviUtl) を比較します。
 
 ### AviUtl Installer Script が優れている点
 * **おすすめ構成が最新のものになっている**\
@@ -62,7 +62,7 @@ AviUtl Installer Script は日本語にしか対応しておらず、インス�
 * AviUtlに関する知識をある程度持っており、より多くのパッケージを楽にインストールしたいという中級者以上のユーザーであっても、AviUtl Extra Pack の古さやライセンスの不明瞭さを考慮すれば、APMを利用する方が良い。
 
 ## AviUtlAutoInstaller
-Aviutl Installer Script と [AviUtlAutoInstaller](https://minfia.github.io/AviUtlAutoInstaller/) (AAI) を比較します。
+AviUtl Installer Script と [AviUtlAutoInstaller](https://minfia.github.io/AviUtlAutoInstaller/) (AAI) を比較します。
 
 ### AviUtl Installer Script が優れている点
 * **必須級のプラグインをまとめてインストールできる**\
