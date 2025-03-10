@@ -61,6 +61,32 @@ AviUtl Installer Script は日本語にしか対応しておらず、インス�
 * AviUtl Extra Pack の古さやライセンスの不明瞭さ、不要な複雑さを考慮すれば、AviUtl Installer Script を使用する方が良いと考えられる。
 * AviUtlに関する知識をある程度持っており、より多くのパッケージを楽にインストールしたいという中級者以上のユーザーであっても、AviUtl Extra Pack の古さやライセンスの不明瞭さを考慮すれば、APMを利用する方が良い。
 
+## AviUtl-Installer-pwsh
+AviUtl Installer Script と [AviUtl-Installer-pwsh](https://github.com/Per-Terra/AviUtl-Installer-pwsh/) を比較します。
+
+### AviUtl Installer Script が優れている点
+* **最新バージョンがインストールされる**\
+AviUtl-Installer-pwsh では、**必須と言われるプラグインの patch.aul が** 謎さうなフォーク版 ではなく ePi版 、LuaJIT も 2.1.0 beta3 と**古いバージョンが指定されている**。また、AviUtl-Installer-pwsh は Aulsメモリ参照の1.00以降対応パッチ版 をインストールしようとするものの、リンク切れによりインストールできなくなっている。
+* **現在も更新が続いている**\
+AviUtl-Installer-pwsh は Aulsメモリ参照 のインストールができなくなっていることで、多くのファイルの配置やリネームにおける致命的な不具合を起こしており、**導入されたAviUtlをそのまま実行して使用することができない** (2025年3月現在) 。しかし、AviUtl-Installer-pwsh は**2022年前半から更新されておらず、2023年後半にはアーカイブされてしまっている**ため、これらの**問題が解消される可能性は低い**。
+* **操作がよりシンプル**\
+AviUtl Installer Script はダブルクリックでファイルを実行するだけで作業が完了する。AviUtl-Installer-pwsh はワンライナーをコピー&ペーストするだけで済むとはいえ、コマンドを入力する必要があり、またトラブルの少ないインストール場所を選択したりショートカットを作ったりはできない。
+* **Visual C++ 再頒布可能パッケージのインストールに対応している**\
+AviUtl Installer Script は必須プラグインである patch.aul や有名なティム氏のスクリプトなどで必要となる、Visual C++ 再頒布可能パッケージのインストールに対応している。AviUtl-Installer-pwsh は対応していない。
+* **導入後にAviUtl Package Managerが使用可能**\
+インストールしたパッケージをAPMに認識させるための apm.json を配置するため、パッケージの追加などを含めAPMを使用して AviUtl Installer Script で導入したAviUtl環境の管理を行うことが可能。
+
+### AviUtl-Installer-pwsh が優れている点
+* **rikkymodule&memory をインストールできる**\
+AviUtl-Installer-pwsh では多くのプラグインやスクリプトが必要とする rikkymodule&memory を同時にインストールできる。AviUtl Installer Script も将来的に rikkymodule&memory のインストールに対応予定だが、2025年3月現在では AviUtl-Installer-pwsh がこの点では優れている。
+* **手動でのダウンロードが不要である**\
+AviUtl Installer Script は手動でダウンロードした後に実行する必要があるが、AviUtl-Installer-pwsh は実行するワンライナーによってコードが自動的にダウンロードされて読み込まれるため、手動でのダウンロードは不要となっている。そのため、常に最新版が使用されるほか、使用後のファイルが残らないという利点がある。
+
+### どちらを使うべき？ (ここまでの結論)
+**AviUtlを導入する用途であれば AviUtl Installer Script を使用する方が良い**だろう。
+* AviUtl-Installer-pwsh の致命的な不具合や古さ、今後の更新が期待できないことを考慮すれば、AviUtl Installer Script を使用する方が良い。
+* AviUtlに関する知識をある程度持っており、こういった致命的な不具合や古さに対応することができる中級者以上のユーザーであっても、わざわざ AviUtl-Installer-pwsh を選ぶだけのメリットがあまりなく、AviUtl Installer Script の使用後に手動またはAPMを用いて rikkymodule&memory をインストールする方が良いと考えられる。
+
 ## AviUtlAutoInstaller
 AviUtl Installer Script と [AviUtlAutoInstaller](https://minfia.github.io/AviUtlAutoInstaller/) (AAI) を比較します。
 
